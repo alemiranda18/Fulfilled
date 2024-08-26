@@ -1,0 +1,634 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(241, 249, 241);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navEdit{
+    background-color: white;
+    margin: 0;
+}
+.mainEdit{
+    background-color: rgb(207, 226, 242);
+    margin: 0;
+}
+/*inicio edicion header*/
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imagen-header{
+    width:500px ;
+    height: 80px;  
+}
+.lista-link{
+list-style: none;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin: 10px 20px ;
+}
+
+.link-item a img{
+    height: 30px;
+}
+.link-item{
+    padding: 15px;
+}
+.conteiner-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+.list-item{
+    border-radius: 3px;
+    background-color: rgb(193, 180, 242);
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.conteiner-list :hover{
+    background-color: rgba(158, 209, 127, 0.553);
+}
+.iconWsp{
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+/*fin edicion header*/
+
+/*inicio edicion main*/
+.sectionUno{
+    text-align: center;
+}
+.sectionUno h1{
+    font-size: 5em;
+}
+.sectionUno h2{
+    text-align: center;
+    font-size: 2em;
+}
+.sectionUno p{
+    text-align: center;
+    font-size: 1.1em;
+    padding: 20px;
+}
+.imgDoctor{
+    display: flex;
+    flex-direction: row;
+    margin: 0 20%;
+    border-radius: 10%;
+    background-color: rgb(202, 151, 151);
+    width: 950px;
+}
+.imgDoctor img{
+    width: 500px;
+    height: 300px;
+    border-radius: 5%;
+}
+.parrafoDoctor{
+    display: flex;
+    flex-direction: column;
+}
+.imgDoctor p {
+    margin: 0 0 ;
+    text-align: center;
+    align-self: center;
+    padding: 40px;
+    font-weight: bolder;
+}
+.testimonios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px; 
+}
+.testimonioUno{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(215, 197, 232);
+    border-radius: 5%;
+}
+.imgUno{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgb(212, 190, 163);
+}
+.imgUno img{
+    width: 80px;
+    height: 50px;
+}
+.imgUno p{
+    align-self: center;
+    font-size: 1.1em;
+    font-weight: 900;
+    padding-left: 100px;
+}
+.parrafoUno{
+    margin:20px Dos
+}
+.parrafoUno p{
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 10px;
+}
+.testimonioDos{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(144, 210, 100);
+    border-radius: 5%;
+}
+.imgDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgb(175, 170, 165);
+}
+.imgDos img{
+    width: 80px;
+    height: 50px;
+}
+.imgDos p{
+    align-self: center;
+    font-size: 1.1em;
+    font-weight: 900;
+    padding-left: 100px;
+}
+.parrafoDos{
+    margin:20px ;
+}
+.parrafoDos p{
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 10px;
+}
+.testimonioTres{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(190, 178, 186);
+    border-radius: 5%;
+}
+.imgTres{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgb(161, 136, 212);
+}
+.imgTres img{
+    width: 80px;
+    height: 50px;
+}
+.imgTres p{
+    align-self: center;
+    font-size: 1.1em;
+    font-weight: 900;
+    padding-left: 100px;
+}
+.parrafoTres{
+    margin:20px ;
+}
+.parrafoTres p{
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 10px;
+}
+.testimonioCuatro{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(232, 147, 147);
+    border-radius: 5%;
+}
+.imgCuatro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgb(163, 210, 212);
+}
+.imgCuatro img{
+    width: 80px;
+    height: 50px;
+}
+.imgCuatro p{
+    align-self: center;
+    font-size: 1.1em;
+    font-weight: 900;
+    padding-left: 100px;
+}
+.parrafoCuatro{
+    margin:20px ;
+}
+.parrafoCuatro p{
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 10px;
+}
+/*fin edicion inicio*/
+
+/*inicio edicion footer*/
+.footerEdit{
+    background-color: rgb(201, 123, 123);
+    margin: 0;
+}
+.container-footer{text-align: center;
+    background-color: aquamarine;
+    padding: 5px;
+}
+.list-footer{
+    display: inline-block;
+    margin:0 30px;
+}
+.titulosFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.titulosFooter ul li{
+    margin: 30px;
+}
+.titulosFooter ul li:hover{
+    color: aliceblue;
+}
+/*fin edicion footer*/
+
+/*inicio edicion nosotros*/
+
+.sectionNosotros{
+    text-align: center;
+}
+.sectionNosotros h1{
+    font-size: 5em;
+}
+.sectionNosotros h2{
+    text-align: center;
+    font-size: 2em;
+}
+.sectionNosotros p{
+    text-align: center;
+    font-size: 1.1em;
+    padding: 20px;
+}
+.seccionDoctor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+.seccionDoctor img{
+    border-radius: 10%;
+    margin: 20px;
+}
+.conocenos{
+    background-color: rgb(149, 174, 165);
+    height: 70px;
+}
+.conocenos h4{
+    font-size: 3em;
+    text-align: center;
+}
+.medicos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+    gap: 50px;
+}
+.imgMedicoUno{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(223, 220, 216);
+    border: 2px solid black;
+    margin: 5px;
+}
+.imgMedicoUno img{
+    width: 200px;
+}
+.parrafoMedicoUno{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.parrafoMedicoUno p{
+    text-align: center;
+    align-self: center;
+    font-size: 1.2em;
+}
+
+.imgMedicoDos{
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    border: 2px solid rgb(148, 111, 111);
+}
+.imgMedicoDos img{
+ width: 200px;
+}
+.imgMedicoDos p{
+    text-align: center;
+    align-self: center;
+}
+.parrafoMedicoDos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.parrafoMedicoDos p{
+    text-align: center;
+    align-self: center;
+    font-size: 1.2em;
+}
+.sedes h4{
+    text-align: center;
+    font-size: 2em;
+}
+.sedeUbicacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.sedeUbicacion{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+ .imagenSedes1{
+    background-image: url(../assets/consultoriochacras.jpg);
+    width: 600px;
+    height: 400px;
+    background-position: center;
+ }
+ .imagenSedes1:hover{
+    opacity: 70%;
+ }
+.imagenSedes1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    opacity: 0%;
+}
+.imagenSedes1 p:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    opacity: 100%;
+    color: black;
+}
+.imagenSedes2{
+background-image: url(../assets/consultorioCapital.jpg);
+width: 600px;
+height: 400px;
+background-position: center;
+}
+.imagenSedes2:hover{
+    opacity: 70%;
+ }
+.imagenSedes2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    opacity: 0%;
+}
+
+.imagenSedes2 p:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    opacity: 150%;
+    color: rgb(0, 0, 0);
+}
+.imagenSedes3{
+background-image: url(../assets/consultorioVistalba.jpg);
+width: 600px;
+height: 400px;
+background-position: center;
+}
+.imagenSedes3:hover{
+    opacity: 70%;
+ }
+.imagenSedes3 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    opacity: 0%;
+}
+
+.imagenSedes3 p:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    opacity: 100%;
+    color: black;
+}
+.imagenSedes4{
+background-image: url(../assets/consultorioSanLuis.jpg);
+width: 600px;
+height: 400px;
+background-position: center;
+}
+.imagenSedes4:hover{
+    opacity: 70%;
+ }
+.imagenSedes4 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    opacity: 0%;
+}
+
+.imagenSedes4 p:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    opacity: 100%;
+    color: black;
+}
+/* fin edicion pagina nosotros*/
+
+/*inicio edicion pagina ubicacion*/
+.sectionUbicacion h1{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+.sectionUbicacion h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+.sectionUbicacion h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 30px;
+}
+.consultorios{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.consultorios div p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    margin: 20px;
+}
+.ubicacion{
+    text-align: center;
+}
+.ubicacion img{
+    width: 700px;
+    height: 350px;
+    margin-right: 20px;
+}
+.ubicacion iframe{
+    height: 350px;
+}
+/* fin edicion pagina ubicacion*/
+
+/*inicio edicion pagina tratamientos*/
+.sectionTratamientos h1{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+.sectionTratamientos h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+.sectionTratamientos p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 30px;
+}
+.listaTratamientos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+    row-gap: 20px;
+}
+.listaTratamientos li{
+    border: 1px solid  black;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 30px;
+    list-style: none;
+    background-color: rgb(210, 210, 219);
+    border-radius: 5%;
+}
+.listaTratamientos li img{
+    width: 100%;
+    height: 300px;
+    border-radius: 6%;
+}
+.listaTratamientos li p{
+width: 75%;
+margin-top: 10px;
+margin-left: 5px;
+margin-bottom: 5px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.videoTratamientos{
+    margin-top: 30px;
+    background-color: rgb(206, 196, 196);
+    width: 100%;
+}
+.videoTratamientos p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 10px;
+}
+.videoTratamientos div{
+    text-align: center;
+}
+.videoTratamientos div iframe{
+    width: 800px;
+    height: 450px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+/* fin edicion pagina tratamientos*/
+
+/* inicio edicion pagina contactanos*/
+.sectionContacto{
+    text-align: center;
+}
+.sectionContacto h1{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4em;
+}
+.sectionContacto h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+}
+
+.sectionContacto img{
+    margin-top: 20px;
+    width: 700px;
+    height: 400px;
+}
+.sectionContacto p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 30px;
+}
+.listaHorario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 40px;
+    justify-content: center;
+}
+.horarioConsultorio{
+    margin: 50px;
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    background-image: url(../assets/consultorioCapital.jpg);
+    background-position: center;
+}
