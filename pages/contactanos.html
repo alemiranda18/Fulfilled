@@ -68,8 +68,8 @@
             </div>
         </section>
         <section class="sectionForm">
-            <h3>si queres comunicarte con nosotros o solicitar un turno podes hacerlo llenando el siguiente formulario</h3>   
-           <div class="formulario">
+            <h3>Si queres comunicarte con nosotros o solicitar un turno podes hacerlo llenando el siguiente formulario</h3>   
+          <div class="formulario">
             <form action="#" method="post" enctype="text/plain">
                 <label for="nombreyapellido">nombre y apellido</label>
                 <input type="text" name="nombreyapellido" id="nombreyapellido" placeholder="nombre y apellido">
@@ -79,7 +79,7 @@
                 <input type="date" name="date" id="date">
                 <label for="mensaje">deja tu mensaje</label>
                 <textarea name="mensaje" id="mensaje" placeholder="deja tu mensaje"></textarea>
-                <select name="tratamientos" id="tratamientos"placeholder"tratamientos" >
+                <select name="tratamientos" id="tratamientos" placeholder"tratamientos">
                     <option value="tratamientos">tratamientos...</option>
                     <option value="masoterpia">mesoterapia</option>
                     <option value="rinomodelacion">rinomodelacion</option>
@@ -89,14 +89,54 @@
                     <option value="prp">plasma rico plaquetas</option>
                     <option value="ginecoestetica">gineco estetica</option>
                 </select>
-                
-              <!--  <input type="submit" name="" id="inputEnviar" value="enviar"> -->
-              <button type="button" class="btn btn-primary"
-                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                    enviar
-                </button>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button">Enviar</button>
+                  </div>
             </form>   
         </section>
+    <section class="acordeonBootstrap">
+        <div>
+            <p>Preguntas Frecuentes</p>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿Que realizan en la primera consulta?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    En la primer consulta se hace una evaluacion del procedimiento a seguir y se realiza el diagnostico correspondiente para poder llevar a cabo el tratamiento.      
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿ Los procedimientos son dolorosos o invasivos?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Los procedimientos son minimamente invasivos e indoloros,en todos los tratamientos se usa anestesia local, no deja efectos secundarios y las microcirugias son ambulatorias.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Que metodos de pagos tienen? ¿Se puede abonar en cuotas?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Aceptamos todos los metodos de pagos, efectivo,transferencia y todas las tarjetas bancarizadas. Si se pueden pagar en 6,9 o 12 cuotas.
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
     </main>
     <footer class="footerEdit">
         <div>
