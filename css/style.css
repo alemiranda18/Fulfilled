@@ -7,7 +7,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 .navEdit{
     background-color: white;
@@ -67,8 +66,34 @@ margin: 10px 20px ;
     right: 100px;
 }
 /*fin edicion header*/
+/*inicio edicion footer*/
+.footerEdit{
+    background-color: rgb(201, 123, 123);
+    margin: 0;
+}
+.container-footer{text-align: center;
+    background-color: aquamarine;
+    padding: 5px;
+}
+.list-footer{
+    display: inline-block;
+    margin:0 30px;
+}
+.titulosFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.titulosFooter ul li{
+    margin: 30px;
+}
+.titulosFooter ul li:hover{
+    color: aliceblue;
+}
+/*fin edicion footer*/
 
-/*inicio edicion main*/
+/*inicio edicion inicio*/
 .sectionUno{
     text-align: center;
 }
@@ -119,7 +144,7 @@ margin: 10px 20px ;
 }
 .testimonioUno{
     width: 500px;
-    height: 250px;
+    height: 300px;
     background-color: rgb(215, 197, 232);
     border-radius: 5%;
 }
@@ -149,7 +174,7 @@ margin: 10px 20px ;
 }
 .testimonioDos{
     width: 500px;
-    height: 250px;
+    height: 300px;
     background-color: rgb(144, 210, 100);
     border-radius: 5%;
 }
@@ -179,7 +204,7 @@ margin: 10px 20px ;
 }
 .testimonioTres{
     width: 500px;
-    height: 250px;
+    height: 300px;
     background-color: rgb(190, 178, 186);
     border-radius: 5%;
 }
@@ -209,7 +234,7 @@ margin: 10px 20px ;
 }
 .testimonioCuatro{
     width: 500px;
-    height: 250px;
+    height: 300px;
     background-color: rgb(232, 147, 147);
     border-radius: 5%;
 }
@@ -239,32 +264,7 @@ margin: 10px 20px ;
 }
 /*fin edicion inicio*/
 
-/*inicio edicion footer*/
-.footerEdit{
-    background-color: rgb(201, 123, 123);
-    margin: 0;
-}
-.container-footer{text-align: center;
-    background-color: aquamarine;
-    padding: 5px;
-}
-.list-footer{
-    display: inline-block;
-    margin:0 30px;
-}
-.titulosFooter{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 30px;
-}
-.titulosFooter ul li{
-    margin: 30px;
-}
-.titulosFooter ul li:hover{
-    color: aliceblue;
-}
-/*fin edicion footer*/
+
 
 /*inicio edicion nosotros*/
 
@@ -632,3 +632,62 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(../assets/consultorioCapital.jpg);
     background-position: center;
 }
+.horarioConsultorio b{
+    font-size: 2.4em;
+    margin-top: 40px;
+}
+.horarioConsultorio p{
+    margin-top: 30px;
+    font-size: 2em;
+}
+.sectionForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 450px;
+    border: 2px solid black;
+    gap: 10px;
+}
+.formulario form label{
+    display: none;
+}
+.formulario form input{
+    height: 45px;
+    background-color: rgb(232, 221, 221);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.formulario form textarea {
+    height: 120px;
+    background-color:  rgb(232, 221, 221);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.formulario form select{
+    height: 40px;
+    background-color:  rgb(255, 185, 164);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#inputEnviar{
+    width: 100px;
+    height: 40px; 
+    background-color: rgb(170, 156, 255);
+    margin-top: 20px;
+}
+#inputEnviar:hover{
+    background-color: rgb(163, 87, 87);
+}
+/* fin edicion contactanos*/
