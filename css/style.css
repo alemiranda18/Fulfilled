@@ -549,10 +549,8 @@ background-position: center;
     margin: 0;
     padding: 0;
 }
-
-
-
 }
+/*fin diseño responsive nosotros*/
 /* fin edicion pagina nosotros*/
 
 /*inicio edicion pagina ubicacion*/
@@ -575,7 +573,8 @@ background-position: center;
 .consultorios{
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin-top:30px;
+    padding-bottom: 20px;
 }
 .consultorios div p{
     text-align: center;
@@ -593,6 +592,24 @@ background-position: center;
 }
 .ubicacion iframe{
     height: 350px;
+}
+/*diseño responsive ubicacion*/
+@media(max-width:425px){
+    .conteiner-list{
+        margin: 0;
+        padding: 0;
+    }
+    .list-item{
+        width: 100%;
+    }
+    .consultorios{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .ubicacion img{
+        width: 100%;
+    }
 }
 /* fin edicion pagina ubicacion*/
 
