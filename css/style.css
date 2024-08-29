@@ -77,7 +77,6 @@ margin: 10px 20px ;
         width: 100%;
     }
     .iconWsp{
-        position: fixed;
         bottom: 100px;
         left:80%;
     }
@@ -111,6 +110,11 @@ margin: 10px 20px ;
 .titulosFooter ul li:hover{
     color: aliceblue;
 }
+@media(max-width:425px){
+    .titulosFooter{
+        flex-direction: column;
+    }
+    }
 
 /*fin edicion footer*/
 
@@ -120,6 +124,7 @@ margin: 10px 20px ;
 }
 .sectionUno h1{
     font-size: 5em;
+    text-align: center;
 }
 .sectionUno h2{
     text-align: center;
@@ -129,6 +134,12 @@ margin: 10px 20px ;
     text-align: center;
     font-size: 1.1em;
     padding: 20px;
+}
+.sectionUno img{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .imgDoctor{
     display: flex;
@@ -295,6 +306,8 @@ margin: 10px 20px ;
     padding: 10px;
 }
 /* diseño responsive inicio*/
+
+
 @media(max-width:425px){
     .sectionUno img{
         width: 100%;
@@ -316,7 +329,8 @@ margin: 10px 20px ;
     .card{
         width: 100%;
     }
-}
+    }
+
 /*fin edicion inicio*/
 /*inicio edicion nosotros*/
 
@@ -589,6 +603,7 @@ background-position: center;
     width: 700px;
     height: 350px;
     margin-right: 20px;
+    vertical-align: 0;
 }
 .ubicacion iframe{
     height: 350px;
