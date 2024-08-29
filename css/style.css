@@ -317,7 +317,6 @@ margin: 10px 20px ;
         width: 100%;
     }
 }
-
 /*fin edicion inicio*/
 /*inicio edicion nosotros*/
 
@@ -537,6 +536,22 @@ background-position: center;
     font-size: 3em;
     opacity: 100%;
     color: black;
+}
+/*diseño responsive nosotros*/
+@media(max-width:425px){
+.seccionDoctor img{
+    width: 100%;
+}
+.medicos{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 }
 /* fin edicion pagina nosotros*/
 
