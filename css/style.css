@@ -17,8 +17,9 @@
     justify-content: space-between;
 }
 .imagen-header{
-    width:500px ;
-    height: 80px;  
+    width:300px ;
+    height: 80px; 
+    padding-left: 30px;
 }
 .lista-link{
 list-style: none;
@@ -65,7 +66,8 @@ margin: 10px 20px ;
         flex-direction: column;
     }
     .container-header img{
-        width: 100%;
+        width: 80%;
+        justify-content: center;
     }
     .conteiner-list{
         flex-direction: column;
@@ -435,7 +437,8 @@ margin: 10px 20px ;
 .sedeUbicacion{
     display: flex;
     flex-direction: row;
-    margin: 40px;
+    margin: 20px 0 0 ;
+    padding-bottom: 15px;
 }
  .imagenSedes1{
     background-image: url(../assets/consultoriochacras.jpg);
@@ -625,6 +628,7 @@ background-position: center;
     }
     .ubicacion img{
         width: 100%;
+        margin-right: 0;
     }
 }
 /* fin edicion pagina ubicacion*/
@@ -648,8 +652,8 @@ background-position: center;
 }
 .listaTratamientos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;   
-    row-gap: 20px;
+    grid-template-columns: repeat(3,1fr);   
+    row-gap: 10px;
 }
 .listaTratamientos li{
     border: 1px solid  black;
@@ -691,6 +695,25 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 450px;
     margin-top: 40px;
     margin-bottom: 30px;
+}
+/* inicio diseño responsive tratamientos*/
+@media(max-width:425px){
+    .listaTratamientos{
+        grid-template-columns: 1fr;
+        margin: 0%;
+        padding: 0%;
+    }
+    .listaTratamientos  li{
+       margin-left: 10px;
+       text-align: center;
+
+    }
+    .videoTratamientos{
+        width: 100%;
+    }
+    .videoTratamientos div iframe{
+        width: 400px;
+    }
 }
 /* fin edicion pagina tratamientos*/
 
@@ -797,4 +820,23 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 30px;
 
 }
+/* inicio diseño responsive contactanos*/
+@media(max-width:425px){
+    .sectionContacto img{
+        width: 100%;
+    }
+    .listaHorario{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .horarioConsultorio{
+        width: 420px;
+        margin: 0;
+    }
+    .formulario{
+        width: 98%;
+    }
+}
+/*fin diseño responsive contactanos*/
+
 /* fin edicion contactanos*/
