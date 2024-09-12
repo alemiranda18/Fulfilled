@@ -42,8 +42,8 @@
 }
 }
 .testimonios{
-    @extend%flexrow;
-    flex-wrap: wrap;
+   display: grid;
+   grid-template-columns: 500px 500px;
     gap: 30px;
     justify-content: center;
     margin-top: 30px;
@@ -218,6 +218,9 @@
 }
 
 @media(max-width:425px){
+    .sectionUno p {
+        width: 400px;
+      }
     .sectionUno img{
         width: 100%;
     }
@@ -230,6 +233,24 @@
         width: 100%;
         text-align: center;
     }
+    .testimonios{
+        display: grid;
+        grid-template-columns: 750px;
+        justify-items: center;
+        padding: 0;
+        .testimonioUno{
+         @include sizes(400px,300px);
+        }
+        .testimonioDos{
+          @include sizes(400px,300px);
+         }
+        .testimonioTres{ 
+         @include sizes(400px,300px);
+        }
+        .testimonioCuatro{ 
+         @include sizes(400px,300px);
+        }
+     }
     .revista{
         grid-template-columns: 400px;
     }

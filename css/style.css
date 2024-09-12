@@ -368,6 +368,9 @@
   .sectionUno img {
     width: 100%;
   }
+  .sectionUno p {
+    width: 400px;
+  }
   .imgDoctor {
     flex-direction: column;
     width: 100%;
@@ -376,6 +379,28 @@
   .imgDoctor img {
     width: 100%;
     text-align: center;
+  }
+  .testimonios {
+    display: grid;
+    grid-template-columns: 500px;
+    justify-items: center;
+    padding: 0;
+  }
+  .testimonios .testimonioUno {
+    width: 400px;
+    height: 300px;
+  }
+  .testimonios .testimonioDos {
+    width: 400px;
+    height: 300px;
+  }
+  .testimonios .testimonioTres {
+    width: 400px;
+    height: 300px;
+  }
+  .testimonios .testimonioCuatro {
+    width: 400px;
+    height: 300px;
   }
   .revista {
     grid-template-columns: 400px;
