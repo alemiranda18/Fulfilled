@@ -368,9 +368,7 @@
   .sectionUno img {
     width: 100%;
   }
-  .sectionUno p {
-    width: 400px;
-  }
+  
   .imgDoctor {
     flex-direction: column;
     width: 100%;
