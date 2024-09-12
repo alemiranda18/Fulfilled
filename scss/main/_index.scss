@@ -1,0 +1,237 @@
+/*inicio edicion inicio*/
+.sectionUno{
+        @extend%flexcolumn;
+        align-items: center;
+    h1{
+        font-size: 5em;
+        text-align: center;
+        }
+    h2{
+        text-align: center;
+        font-size: 2em;
+}
+    p{
+        text-align: center;
+        font-size: 1.1em;
+        margin-top: 20px;
+}
+    img{
+        @include sizes(900px,450px);
+}
+}
+.imgDoctor{
+    @extend%flexrow;
+    margin: 0 20%;
+    background-color: rgb(202, 151, 151);
+    width: 950px;
+
+    img{
+        @include sizes(500px,300px);
+        border-radius: 5%;
+}
+
+    .parrafoDoctor{
+         @extend%flexcolumn;
+}
+    p {
+        margin: 0 0 ;
+        text-align: center;
+        align-self: center;
+        padding: 40px;
+        font-weight: bolder;
+}
+}
+.testimonios{
+    @extend%flexrow;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px; 
+
+    .testimonioUno{
+        @include sizes(500px,300px);
+        background-color: rgb(215, 197, 232);
+        border-radius: 5%;
+        .imgUno{
+            @extend%flexrowstart;
+                background-color: rgb(212, 190, 163);
+
+                img{
+                    @include sizes(80px,50px);
+                }
+                p{
+                    @extend%alignself-font;
+                    padding-left: 100px;
+                }
+            }
+        }  
+        .parrafoUno{
+            margin:20px;
+        
+                p{
+                font-size: 1em;
+                font-weight: bolder;
+                padding: 10px;
+            }
+        }
+    .testimonioDos{
+        @include sizes(500px,300px);
+        background-color: rgb(144, 210, 100);
+        border-radius: 5%;
+        .imgDos{
+            @extend%flexrowstart;
+            background-color: rgb(175, 170, 165);
+            img{
+                @include sizes(80px,50px);
+            }
+            p{
+                @extend%alignself-font;
+                padding-left: 100px;
+            }
+        }
+            .parrafoDos{
+                margin:20px ;
+            
+            p{
+                font-size: 1em;
+                font-weight: bolder;
+                padding: 10px;
+                }
+        }   
+    }
+    .testimonioTres{
+        @include sizes(500px,300px); 
+        background-color: rgb(190, 178, 186);
+        border-radius: 5%;
+            .imgTres{
+                @extend%flexrowstart;
+                background-color: rgb(161, 136, 212);
+            
+            img{
+                @include sizes(80px,50px);
+            }
+            p{
+                @extend%alignself-font;
+                padding-left: 100px;
+            }
+        }
+        .parrafoTres{
+            margin:20px ;
+                p{
+                    font-size: 1em;
+                    font-weight: bolder;
+                    padding: 10px;
+                }
+            }
+        }
+    .testimonioCuatro{
+        @include sizes(500px,300px);
+        background-color: rgb(232, 147, 147);
+        border-radius: 5%;
+
+            .imgCuatro{
+                @extend%flexrowstart;
+                background-color: rgb(163, 210, 212);
+            
+                img{
+                    @include sizes(80px,50px);
+                    }
+                p{
+                    @extend%alignself-font;
+                    padding-left: 100px;
+                    }
+                
+            }
+            .parrafoCuatro{
+                margin:20px ;
+                    p{
+                        font-size: 1em;
+                        font-weight: bolder;
+                        padding: 10px;
+                    }
+            }
+        
+    }
+}
+    .revista{
+        display:grid ;
+        grid-template-columns: 500px 500px;
+        justify-content: center;
+        gap: 20px;
+
+        .card{
+            background-color: aqua;
+            margin-bottom: 25px;
+            padding: 10px;
+}
+}
+
+/*diseño responsive inicio*/
+
+@media(max-width:770px){
+    .sectionUno{
+        width: 100%;
+        p{
+            width: 700px;
+        }
+        img{
+            width: 95%;
+        }
+    }
+
+    .imgDoctor{
+        flex-direction: column;
+        width: 750px;
+        margin: 0%;
+        gap: 20px;
+        img{
+            width: 100%;
+        }
+
+    }
+    .testimonios{
+       display: grid;
+       grid-template-columns: 750px;
+       justify-items: center;
+       padding: 0;
+       .testimonioUno{
+        @include sizes(650px,300px);
+       }
+       .testimonioDos{
+         @include sizes(650px,300px);
+        }
+       .testimonioTres{ 
+        @include sizes(650px,300px);
+       }
+       .testimonioCuatro{ 
+        @include sizes(650px,300px);
+       }
+    }
+    .revista {
+        grid-template-columns: 650px;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+}
+
+@media(max-width:425px){
+    .sectionUno img{
+        width: 100%;
+    }
+    .imgDoctor{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .imgDoctor img{
+        width: 100%;
+        text-align: center;
+    }
+    .revista{
+        grid-template-columns: 400px;
+    }
+}
+/* fin responsive inicio*/

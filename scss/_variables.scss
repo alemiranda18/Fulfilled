@@ -1,0 +1,35 @@
+$colorPrimario:yellow;
+$colorSecundario:rgb(255, 160, 126);
+$fontPrimaria: Verdana, Geneva, Tahoma, sans-serif;
+
+/*mixin*/
+@mixin sizes($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+/*extend*/
+%flexrowstart{
+   display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+}
+
+%alignself-font{
+                align-self: center;
+                font-size: 1.1em;
+                font-weight: 900;
+}
+%flexCenterCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexrow{
+    display: flex;
+    flex-direction: row;
+}
+%flexcolumn{
+    display: flex;
+    flex-direction: column;
+}

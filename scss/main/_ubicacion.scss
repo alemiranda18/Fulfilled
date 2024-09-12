@@ -1,0 +1,61 @@
+/*inicio edicion pagina ubicacion*/
+.sectionUbicacion h1{
+    font-family: $fontPrimaria;
+    font-size: 4em;
+    text-align: center;
+}
+.sectionUbicacion h2{
+    font-family:  $fontPrimaria;
+    font-size: 2.5em;
+    text-align: center;
+}
+.sectionUbicacion h3{
+    font-family:  $fontPrimaria;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 30px;
+}
+.consultorios{
+    @extend%flexcolumn;
+    margin-top:30px;
+    padding-bottom: 20px;
+}
+.consultorios div p{
+    text-align: center;
+    font-family:$fontPrimaria;
+    font-size: 1.5em;
+    margin: 20px;
+}
+.ubicacion{
+    text-align: center;
+}
+.ubicacion img{
+    @include sizes(700px, 350px);
+    margin-right: 20px;
+    vertical-align: 0;
+}
+.ubicacion iframe{
+    height: 350px;
+}
+
+    
+/*diseño responsive ubicacion*/
+@media(max-width:425px){
+    .conteiner-list{
+        margin: 0;
+        padding: 0;
+    }
+    .list-item{
+        width: 100%;
+    }
+    .consultorios{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .ubicacion img{
+        width: 100%;
+        margin-right: 0;
+    }
+}
+/* fin edicion pagina ubicacion*/

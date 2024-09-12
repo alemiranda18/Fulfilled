@@ -1,0 +1,37 @@
+/*inicio edicion footer*/
+.footerEdit{
+    background-color: rgb(201, 123, 123);
+    margin: 0;
+}
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 5px;
+}
+.list-footer{
+    list-style: none;
+}
+.titulosFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.titulosFooter ul li{
+    margin: 30px;
+}
+.titulosFooter ul li:hover{
+    color: aliceblue;
+}
+/* fin diseño footer*/
+
+/* inicio diseño responsive footer*/
+@media(max-width:425px){
+    .titulosFooter{
+        flex-direction: column;
+    }
+    }
+/* fin diseño responsive inicio*/

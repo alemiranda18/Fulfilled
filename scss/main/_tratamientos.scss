@@ -1,0 +1,84 @@
+/*inicio edicion pagina tratamientos*/
+.sectionTratamientos h1{
+    font-family:  $fontPrimaria;
+    font-size: 4em;
+    text-align: center;
+}
+.sectionTratamientos h2{
+    font-family: $fontPrimaria;
+    font-size: 2.5em;
+    text-align: center;
+}
+.sectionTratamientos p{
+    font-family: $fontPrimaria;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 30px;
+}
+.listaTratamientos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    row-gap: 10px;
+
+    li{
+        border: 1px solid  black;
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 30px;
+        list-style: none;
+        background-color: rgb(210, 210, 219);
+        border-radius: 5%;
+        }
+    li img{
+        @include sizes(100%, 300px );
+        border-radius: 6%;
+        }
+    li p{
+        width: 75%;
+        margin: 10px 0 5px 5px;
+        font-family: $fontPrimaria;
+        }
+}
+.videoTratamientos{
+    margin-top: 30px;
+    background-color: rgb(206, 196, 196);
+    width: 100%;
+
+    p{
+        font-family: $fontPrimaria;
+        font-size: 1.1em;
+        text-align: center;
+        margin-top: 10px;
+}
+
+    div{
+        text-align: center;
+    }
+    iframe{
+        @include sizes (800px,450px);
+        margin-top: 40px;
+        margin-bottom: 30px;
+}
+}
+
+
+/* inicio diseño responsive tratamientos*/
+@media(max-width:425px){
+    .listaTratamientos{
+        grid-template-columns: 1fr;
+        margin: 0%;
+        padding: 0%;
+    }
+    .listaTratamientos  li{
+       margin-left: 10px;
+       text-align: center;
+
+    }
+    .videoTratamientos{
+        width: 100%;
+    }
+    .videoTratamientos div iframe{
+        width: 400px;
+    }
+}
+/* fin edicion pagina tratamientos*/

@@ -1,0 +1,209 @@
+/*inicio edicion nosotros*/
+
+.sectionNosotros{
+    text-align: center;
+
+        h1{
+            font-size: 5em;
+    }
+        h2{
+            text-align: center;
+            font-size: 2em;
+    }
+        p{
+            text-align: center;
+            font-size: 1.1em;
+            padding: 20px;
+    }
+}
+
+.seccionDoctor{
+    @extend%flexcolumn;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+
+    img{
+        border-radius: 10%;
+        margin: 20px;
+    }
+}
+.conocenos{
+    background-color: rgb(149, 174, 165);
+    height: 70px;
+
+    h4{
+        font-size: 3em;
+        text-align: center;
+        }
+}
+.medicos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+    gap: 50px;
+}
+.imgMedicoUno{
+    @extend%flexrow;
+    background-color: rgb(223, 220, 216);
+    border: 2px solid black;
+    margin: 5px;
+
+    img{
+         width: 200px;
+    }
+}
+.parrafoMedicoUno{
+    @extend%flexcolumn;
+    justify-content: space-evenly;
+
+    p{
+    text-align: center;
+    align-self: center;
+    font-size: 1.2em;
+}
+}
+
+.imgMedicoDos{
+    @extend%flexrow;
+    background-color: bisque;
+    border: 2px solid rgb(148, 111, 111);
+
+    img{
+        width: 200px;
+}
+}
+.parrafoMedicoDos{
+    @extend%flexcolumn;
+    justify-content: space-evenly;
+
+    p{
+        text-align: center;
+        align-self: center;
+        font-size: 1.2em;
+}
+}
+.sedes h4{
+    text-align: center;
+    font-size: 2em;
+}
+.sedeUbicacion{
+    @extend%flexrow;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+}
+ .imagenSedes1{
+    background-image: url(../assets/consultoriochacras.jpg);
+    @include sizes(600px,400px);
+    background-position: center;
+ 
+    :hover{
+    opacity: 70%;
+ }
+     p{
+    @extend%flexCenterCenter;
+    @include sizes(100%,100%);
+    font-size: 2em;
+    opacity: 0%;
+}
+    p:hover{
+    @extend%flexCenterCenter;
+    @include sizes(100%,100%);
+    font-size: 3em;
+    opacity: 100%;
+    color: black;
+}
+}
+.imagenSedes2{
+background-image: url(../assets/consultorioCapital.jpg);
+@include sizes(600px,400px);
+background-position: center;
+
+:hover{
+    opacity: 70%;
+ }
+    p{
+        @extend%flexCenterCenter;
+        @include sizes(100%,100%);
+        font-size: 2em;
+        opacity: 0%;
+}
+
+    p:hover{
+        @extend%flexCenterCenter;
+        @include sizes(100%,100%);
+        font-size: 3em;
+        opacity: 150%;
+        color: rgb(0, 0, 0);
+}
+}
+.imagenSedes3{
+background-image: url(../assets/consultorioVistalba.jpg);
+@include sizes(600px,400px);
+background-position: center;
+
+    :hover{
+        opacity: 70%;
+    }
+    p{
+        @extend%flexCenterCenter;
+        @include sizes(100%,100%);
+        font-size: 2em;
+        opacity: 0%;
+    }
+
+    p:hover{
+        @extend%flexCenterCenter;
+        @include sizes(100%,100%);
+        font-size: 3em;
+        opacity: 100%;
+        color: black;
+}
+}
+.imagenSedes4{
+background-image: url(../assets/consultorioSanLuis.jpg);
+@include sizes(600px,400px);
+background-position: center;
+
+    :hover{
+        opacity: 70%;
+    }
+    p{
+        @extend%flexCenterCenter;
+        @include sizes(100%,100%);
+        font-size: 2em;
+        opacity: 0%;
+    }
+
+    p:hover{
+    @extend%flexCenterCenter;
+        @include sizes(100%,100%);
+        font-size: 3em;
+        opacity: 100%;
+        color: black;
+}
+}
+
+/*diseño responsive nosotros*/
+@media(max-width:425px){
+    .seccionDoctor img{
+        width: 100%;
+    }
+    .medicos{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin: 0;
+        padding: 0;
+    }
+    .imgMedicoUno{
+        height: 300px;
+    }
+    .imgMedicoDos{
+        height: 300px;
+    }
+    }
+    /*fin diseño responsive nosotros*/
