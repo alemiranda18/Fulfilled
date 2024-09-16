@@ -3,7 +3,7 @@
         @extend%flexcolumn;
         align-items: center;
     h1{
-        font-size: 5em;
+        font-size: 4em;
         text-align: center;
         }
     h2{
@@ -27,7 +27,6 @@
 
     img{
         @include sizes(500px,300px);
-        border-radius: 5%;
 }
 
     .parrafoDoctor{
@@ -173,7 +172,7 @@
     .sectionUno{
         width: 100%;
         p{
-            width: 700px;
+            width: 500px;
         }
         img{
             width: 95%;

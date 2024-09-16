@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -42,18 +42,25 @@
 
 .list-item {
   border-radius: 3px;
-  background-color: rgb(193, 180, 242);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   margin: 10px;
   width: 500px;
   height: 70px;
   text-align: center;
   font-size: 25px;
+  list-style: none;
 }
 
-.conteiner-list :hover {
-  background-color: rgba(158, 209, 127, 0.553);
-  transition: all 0.3s;
+.list-item:hover {
+  background-color: rgb(210, 248, 248);
+  transition: all 0.5s;
+  scale: 1.1;
+}
+
+.list-item a {
+  color: rgb(104, 69, 58);
+  text-decoration: none;
 }
 
 .iconWsp {
@@ -149,7 +156,7 @@
   align-items: center;
 }
 
-.sedeUbicacion, .imgMedicoDos, .imgMedicoUno, .testimonios, .imgDoctor {
+.sedeUbicacion, .imgMedicoDos, .imgMedicoUno, .imgDoctor {
   display: flex;
   flex-direction: row;
 }
@@ -164,7 +171,7 @@
   align-items: center;
 }
 .sectionUno h1 {
-  font-size: 5em;
+  font-size: 4em;
   text-align: center;
 }
 .sectionUno h2 {
@@ -189,7 +196,6 @@
 .imgDoctor img {
   width: 500px;
   height: 300px;
-  border-radius: 5%;
 }
 .imgDoctor p {
   margin: 0 0;
@@ -200,7 +206,8 @@
 }
 
 .testimonios {
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 500px 500px;
   gap: 30px;
   justify-content: center;
   margin-top: 30px;
@@ -321,7 +328,7 @@
     width: 100%;
   }
   .sectionUno p {
-    width: 700px;
+    width: 500px;
   }
   .sectionUno img {
     width: 95%;
@@ -365,10 +372,12 @@
   }
 }
 @media (max-width: 425px) {
+  .sectionUno p {
+    width: 400px;
+  }
   .sectionUno img {
     width: 100%;
   }
-  
   .imgDoctor {
     flex-direction: column;
     width: 100%;
@@ -380,7 +389,7 @@
   }
   .testimonios {
     display: grid;
-    grid-template-columns: 500px;
+    grid-template-columns: 750px;
     justify-items: center;
     padding: 0;
   }
@@ -410,7 +419,7 @@
   text-align: center;
 }
 .sectionNosotros h1 {
-  font-size: 5em;
+  font-size: 4em;
 }
 .sectionNosotros h2 {
   text-align: center;
