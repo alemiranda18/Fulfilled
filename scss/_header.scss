@@ -1,4 +1,9 @@
 /*inicio edicion header*/
+.menuResponsive{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
 .container-header{
     display: flex;
     flex-direction: row;
@@ -46,7 +51,8 @@ margin: 10px 20px ;
     scale: 1.1;
 }
 .list-item a {
-    color: rgb(104, 69, 58);text-decoration: none;
+    color: rgb(104, 69, 58);
+    text-decoration: none;
 }
 
 .iconWsp{
@@ -59,6 +65,43 @@ margin: 10px 20px ;
 
 /*  inicio diseño responsive header*/
 @media(max-width:425px){
+    .conteiner-list{
+        display: none;
+    }
+    .menuResponsive{
+        display: flex;
+        flex-direction: column;
+    } 
+    .menuResponsive img{
+            width: 45px;
+            height: 45px;
+    }   
+    .menuResponsive ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(215, 215, 215);
+        padding: 0%;
+    }
+    .menuItem{ 
+        width: 50px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    .menuItem a{
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    .menuResponsive:hover .menuItem{
+            display: flex;
+            flex-direction: column;
+            transition-duration: .3s ;
+            scale: 1.1;
+    }
+    
     .container-header{
         flex-direction: column;
     }
