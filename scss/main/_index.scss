@@ -16,7 +16,7 @@
         margin-top: 20px;
 }
     img{
-        @include sizes(900px,450px);
+        @include sizes(80rem,30rem);
 }
 }
 .imgDoctor{
@@ -172,7 +172,7 @@
     .sectionUno{
         width: 100%;
         p{
-            width: 500px;
+            width: 80%;
         }
         img{
             width: 95%;
@@ -180,10 +180,13 @@
     }
 
     .imgDoctor{
+        display: flex;
         flex-direction: column;
-        width: 750px;
-        margin: 0%;
+        width: 98%;
+        margin: 0 0 0 1%gi;
         gap: 20px;
+        align-items: center;
+        
         img{
             width: 100%;
         }
@@ -216,9 +219,9 @@
 
 }
 
-@media(max-width:425px){
+@media(max-width:430px){
     .sectionUno p {
-        width: 400px;
+        width: 80%;
       }
     .sectionUno img{
         width: 100%;
@@ -234,24 +237,25 @@
     }
     .testimonios{
         display: grid;
-        grid-template-columns: 750px;
+        grid-template-columns: 100%;
         justify-items: center;
         padding: 0;
         .testimonioUno{
-         @include sizes(400px,300px);
+         @include sizes(95%,100%);
         }
         .testimonioDos{
-          @include sizes(400px,300px);
+          @include sizes(95%,100%);
          }
         .testimonioTres{ 
-         @include sizes(400px,300px);
+         @include sizes(95%,100%);
         }
         .testimonioCuatro{ 
-         @include sizes(400px,300px);
+         @include sizes(95%,100%);
         }
      }
     .revista{
-        grid-template-columns: 400px;
+        grid-template-columns: 100%;
+        padding-top: 20px;
     }
 }
 /* fin responsive inicio*/

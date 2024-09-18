@@ -77,6 +77,64 @@
 
 /*fin diseño header*/
 /*  inicio diseño responsive header*/
+@media (max-width: 770px) {
+  .conteiner-list {
+    display: none;
+  }
+  .menuResponsive {
+    display: flex;
+    flex-direction: column;
+  }
+  .menuResponsive img {
+    width: 45px;
+    height: 45px;
+  }
+  .menuResponsive ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 215, 215);
+    padding: 0%;
+  }
+  .menuItem {
+    width: 50px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .menuItem a {
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  .menuResponsive:hover .menuItem {
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.3s;
+    scale: 1.1;
+  }
+  .container-header {
+    flex-direction: column;
+  }
+  .container-header img {
+    width: 80%;
+    justify-content: center;
+  }
+  .conteiner-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+    margin-top: 20px;
+  }
+  .list-item {
+    width: 100%;
+  }
+  .iconWsp {
+    bottom: 100px;
+    left: 80%;
+  }
+}
 @media (max-width: 425px) {
   .conteiner-list {
     display: none;
@@ -226,8 +284,8 @@
   margin-top: 20px;
 }
 .sectionUno img {
-  width: 900px;
-  height: 450px;
+  width: 80rem;
+  height: 30rem;
 }
 
 .imgDoctor {
@@ -370,16 +428,18 @@
     width: 100%;
   }
   .sectionUno p {
-    width: 500px;
+    width: 80%;
   }
   .sectionUno img {
     width: 95%;
   }
   .imgDoctor {
+    display: flex;
     flex-direction: column;
-    width: 750px;
-    margin: 0%;
+    width: 98%;
+    margin: 0 0 0 1% gi;
     gap: 20px;
+    align-items: center;
   }
   .imgDoctor img {
     width: 100%;
@@ -413,9 +473,9 @@
     padding-top: 30px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .sectionUno p {
-    width: 400px;
+    width: 80%;
   }
   .sectionUno img {
     width: 100%;
@@ -431,28 +491,29 @@
   }
   .testimonios {
     display: grid;
-    grid-template-columns: 750px;
+    grid-template-columns: 100%;
     justify-items: center;
     padding: 0;
   }
   .testimonios .testimonioUno {
-    width: 400px;
-    height: 300px;
+    width: 95%;
+    height: 100%;
   }
   .testimonios .testimonioDos {
-    width: 400px;
-    height: 300px;
+    width: 95%;
+    height: 100%;
   }
   .testimonios .testimonioTres {
-    width: 400px;
-    height: 300px;
+    width: 95%;
+    height: 100%;
   }
   .testimonios .testimonioCuatro {
-    width: 400px;
-    height: 300px;
+    width: 95%;
+    height: 100%;
   }
   .revista {
-    grid-template-columns: 400px;
+    grid-template-columns: 100%;
+    padding-top: 20px;
   }
 }
 /* fin responsive inicio*/
