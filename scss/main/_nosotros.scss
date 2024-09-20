@@ -188,6 +188,27 @@ background-position: center;
 }
 
 /*diseño responsive nosotros*/
+@media(max-width:770px){
+    .seccionDoctor img{
+        width: 100%;
+    }
+    .medicos{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin: 0;
+    }
+    .imgMedicoUno{
+        height: 250px;
+    }
+    .imgMedicoDos{
+        height: 300px;
+    }
+    .sedes{
+        padding: 10px 0 10px 0;
+    }
+    }
+
 @media(max-width:425px){
     .seccionDoctor img{
         width: 100%;
@@ -200,7 +221,8 @@ background-position: center;
         padding: 0;
     }
     .imgMedicoUno{
-        height: 300px;
+        height: 250px;
+        
     }
     .imgMedicoDos{
         height: 300px;

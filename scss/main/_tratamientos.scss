@@ -63,7 +63,28 @@
 
 
 /* inicio diseño responsive tratamientos*/
-@media(max-width:425px){
+@media(max-width:770px){
+    .listaTratamientos{
+        grid-template-columns:1fr 1fr;
+        gap: 0 10px ;
+        margin: 0%;
+        padding: 0%;
+    }
+    .listaTratamientos  li{
+        width: 90%;
+       margin-left: 10px;
+       text-align: center;
+
+    }
+    .videoTratamientos{
+        width: 100%;
+    }
+    .videoTratamientos div iframe{
+        width: 90%;
+    }
+}
+
+@media(max-width:600px){
     .listaTratamientos{
         grid-template-columns: 1fr;
         margin: 0%;
@@ -78,7 +99,7 @@
         width: 100%;
     }
     .videoTratamientos div iframe{
-        width: 400px;
+        width: 90%;
     }
 }
 /* fin edicion pagina tratamientos*/

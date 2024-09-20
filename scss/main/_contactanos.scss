@@ -95,16 +95,41 @@
 }
 
 /* inicio diseño responsive contactanos*/
-@media(max-width:425px){
+@media(max-width:770px){
+.listaHorario{
+    grid-template-columns:1fr 1fr;
+    gap: 10px;
+    padding-left: 20px;
+}
+.horarioConsultorio{
+    width:100%;
+    margin: 0;
+}
+
+.horarioConsultorio b{
+    font-size: 2.1em;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+.horarioConsultorio p{
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+}
+.formulario{
+    width: 98%;
+}
+}
+@media(max-width:650px){
     .sectionContacto img{
-        width: 100%;
+        width: 90%;
     }
     .listaHorario{
         grid-template-columns: 1fr;
-        row-gap: 20px;
+        row-gap: 10px;
     }
     .horarioConsultorio{
-        width: 420px;
+        width: 100%;
         margin: 0;
     }
     .formulario{

@@ -437,7 +437,7 @@
     display: flex;
     flex-direction: column;
     width: 98%;
-    margin: 0 0 0 1% gi;
+    margin: 0 0 0 1%;
     gap: 20px;
     align-items: center;
   }
@@ -701,6 +701,26 @@
 }
 
 /*diseño responsive nosotros*/
+@media (max-width: 770px) {
+  .seccionDoctor img {
+    width: 100%;
+  }
+  .medicos {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin: 0;
+  }
+  .imgMedicoUno {
+    height: 250px;
+  }
+  .imgMedicoDos {
+    height: 300px;
+  }
+  .sedes {
+    padding: 10px 0 10px 0;
+  }
+}
 @media (max-width: 425px) {
   .seccionDoctor img {
     width: 100%;
@@ -713,7 +733,7 @@
     padding: 0;
   }
   .imgMedicoUno {
-    height: 300px;
+    height: 250px;
   }
   .imgMedicoDos {
     height: 300px;
@@ -768,6 +788,30 @@
 }
 
 /*diseño responsive ubicacion*/
+@media (max-width: 770px) {
+  .conteiner-list {
+    margin: 0;
+    padding: 0;
+  }
+  .list-item {
+    width: 100%;
+  }
+  .consultorios {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .ubicacion {
+    padding-bottom: 10px;
+  }
+  .ubicacion img {
+    width: 80%;
+    margin-right: 0;
+  }
+  .ubicacion iframe {
+    width: 80%;
+  }
+}
 @media (max-width: 425px) {
   .conteiner-list {
     margin: 0;
@@ -854,7 +898,26 @@
 }
 
 /* inicio diseño responsive tratamientos*/
-@media (max-width: 425px) {
+@media (max-width: 770px) {
+  .listaTratamientos {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 10px;
+    margin: 0%;
+    padding: 0%;
+  }
+  .listaTratamientos li {
+    width: 90%;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .videoTratamientos {
+    width: 100%;
+  }
+  .videoTratamientos div iframe {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
   .listaTratamientos {
     grid-template-columns: 1fr;
     margin: 0%;
@@ -868,7 +931,7 @@
     width: 100%;
   }
   .videoTratamientos div iframe {
-    width: 400px;
+    width: 90%;
   }
 }
 /* fin edicion pagina tratamientos*/
@@ -979,16 +1042,40 @@
 }
 
 /* inicio diseño responsive contactanos*/
-@media (max-width: 425px) {
-  .sectionContacto img {
+@media (max-width: 770px) {
+  .listaHorario {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  .horarioConsultorio {
     width: 100%;
+    margin: 0;
+  }
+  .horarioConsultorio b {
+    font-size: 2.1em;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+  }
+  .horarioConsultorio p {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+  }
+  .formulario {
+    width: 98%;
+  }
+}
+@media (max-width: 650px) {
+  .sectionContacto img {
+    width: 90%;
   }
   .listaHorario {
     grid-template-columns: 1fr;
-    row-gap: 20px;
+    row-gap: 10px;
   }
   .horarioConsultorio {
-    width: 420px;
+    width: 100%;
     margin: 0;
   }
   .formulario {
