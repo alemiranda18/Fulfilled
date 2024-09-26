@@ -20,25 +20,44 @@
     grid-template-columns: repeat(3,1fr);   
     row-gap: 10px;
 
-    li{
-        border: 1px solid  black;
+    .tratamientos{
         width: 400px;
+        height: 570px;
         margin-top: 20px;
-        margin-left: 30px;
+        margin-left: 20px;
         list-style: none;
-        background-color: rgb(210, 210, 219);
-        border-radius: 5%;
+        background-color: rgb(251, 251, 255);
+        overflow: hidden;
+        box-shadow: 0px 1px 5px rgb(154, 35, 35);
+        transition: all 400ms ease;
+        text-align: center;
         }
-    li img{
+    .tratamientos:hover{
+            box-shadow: 0px 1px 10px rgb(154, 35, 35);
+            transform: translateY(-3%);
+        }
+    .tratamientos img{
         @include sizes(100%, 300px );
-        border-radius: 6%;
-        }
-    li p{
-        width: 75%;
-        margin: 10px 0 5px 5px;
+    }
+    .tratamientos p{
+        margin-top: 5px;
         font-family: $fontPrimaria;
+        } 
+        .tratamientos a{
+            color: rgb(62, 38, 38);
+            text-decoration: none;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 4px;
+            transition: all 400ms ease;
+            font-family: $fontPrimaria;
+        } 
+        .tratamientos a:hover{
+            background-color: rgb(151, 136, 136);
+            color: azure;
         }
 }
+
 .videoTratamientos{
     margin-top: 30px;
     background-color: rgb(206, 196, 196);

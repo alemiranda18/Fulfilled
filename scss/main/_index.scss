@@ -1,19 +1,26 @@
 /*inicio edicion inicio*/
+.mainEdit{
+background-color:$colorPrimario;
+}
 .sectionUno{
         @extend%flexcolumn;
         align-items: center;
     h1{
+        font-family: $fontPrimaria;
         font-size: 4em;
         text-align: center;
         }
     h2{
+        font-family: $fontPrimaria;
         text-align: center;
-        font-size: 2em;
+        font-size: 2.5em;
 }
     p{
+        font-family: $fontPrimaria;
         text-align: center;
         font-size: 1.1em;
         margin-top: 20px;
+        width: 80%;
 }
     img{
         @include sizes(80rem,30rem);
@@ -50,11 +57,11 @@
 
     .testimonioUno{
         @include sizes(500px,300px);
-        background-color: rgb(215, 197, 232);
+        background-color: rgb(235, 227, 242);
         border-radius: 5%;
         .imgUno{
             @extend%flexrowstart;
-                background-color: rgb(212, 190, 163);
+                background-color: rgb(225, 218, 208);
 
                 img{
                     @include sizes(80px,50px);
@@ -76,11 +83,11 @@
         }
     .testimonioDos{
         @include sizes(500px,300px);
-        background-color: rgb(144, 210, 100);
+        background-color: rgb(206, 237, 186);
         border-radius: 5%;
         .imgDos{
             @extend%flexrowstart;
-            background-color: rgb(175, 170, 165);
+            background-color: rgb(197, 188, 179);
             img{
                 @include sizes(80px,50px);
             }
@@ -101,11 +108,11 @@
     }
     .testimonioTres{
         @include sizes(500px,300px); 
-        background-color: rgb(190, 178, 186);
+        background-color: rgb(235, 206, 225);
         border-radius: 5%;
             .imgTres{
                 @extend%flexrowstart;
-                background-color: rgb(161, 136, 212);
+                background-color: rgb(192, 178, 218);
             
             img{
                 @include sizes(80px,50px);
@@ -126,12 +133,12 @@
         }
     .testimonioCuatro{
         @include sizes(500px,300px);
-        background-color: rgb(232, 147, 147);
+        background-color: rgb(239, 182, 182);
         border-radius: 5%;
 
             .imgCuatro{
                 @extend%flexrowstart;
-                background-color: rgb(163, 210, 212);
+                background-color: rgb(189, 229, 231);
             
                 img{
                     @include sizes(80px,50px);

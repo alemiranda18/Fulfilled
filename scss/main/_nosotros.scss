@@ -4,13 +4,16 @@
     text-align: center;
 
         h1{
+            font-family: $fontPrimaria;
             font-size: 4em;
     }
         h2{
+            font-family: $fontPrimaria;
             text-align: center;
-            font-size: 2em;
+            font-size: 2.5em;
     }
         p{
+            font-family: $fontPrimaria;
             text-align: center;
             font-size: 1.1em;
             padding: 20px;
@@ -94,11 +97,13 @@
     gap: 40px;
     justify-content: center;
     margin-top: 20px;
+    padding-bottom: 15px;
 }
  .imagenSedes1{
     background-image: url(../assets/consultoriochacras.jpg);
     @include sizes(600px,400px);
     background-position: center;
+    text-decoration: none;
  
     :hover{
     opacity: 70%;
@@ -108,6 +113,7 @@
     @include sizes(100%,100%);
     font-size: 2em;
     opacity: 0%;
+
 }
     p:hover{
     @extend%flexCenterCenter;
@@ -115,12 +121,15 @@
     font-size: 3em;
     opacity: 100%;
     color: black;
+    
 }
 }
 .imagenSedes2{
 background-image: url(../assets/consultorioCapital.jpg);
 @include sizes(600px,400px);
 background-position: center;
+text-decoration: none;
+
 
 :hover{
     opacity: 70%;
@@ -144,6 +153,7 @@ background-position: center;
 background-image: url(../assets/consultorioVistalba.jpg);
 @include sizes(600px,400px);
 background-position: center;
+text-decoration: none;
 
     :hover{
         opacity: 70%;
@@ -167,6 +177,7 @@ background-position: center;
 background-image: url(../assets/consultorioSanLuis.jpg);
 @include sizes(600px,400px);
 background-position: center;
+text-decoration: none;
 
     :hover{
         opacity: 70%;
