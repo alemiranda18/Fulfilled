@@ -55,32 +55,42 @@
 }
 .formulario form{
     @extend%flexcolumn;
-    @include sizes(500px, 400px);
-    border: 2px solid black;
-    gap: 10px;
+    @include sizes(500px, 380px);
+    background-color: rgb(139, 189, 189);
+    padding: 10px;
+    gap: 5px;
 }
 .formulario form label{
     display: none;
 }
 .formulario form input{
     height: 45px;
-    background-color: rgb(232, 221, 221);
+    background-color:$colorFormulario;
     color: rgb(0, 0, 0);
     text-decoration: none;
+    
 }
 .formulario form textarea {
     height: 120px;
-    background-color:  rgb(232, 221, 221);
-    color: rgb(0, 0, 0);
+    background-color:  $colorFormulario;
+    color: rgb(224, 211, 211);
     text-decoration: none;
 }
 .formulario form select{
     height: 40px;
-    background-color:  rgb(255, 185, 164);
+    background-color:  $colorFormulario;
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-
+.buttonForm{
+    justify-content: center;
+    width: 130px;
+    height: 40px;
+    background-color: rgb(231, 161, 245);
+}
+.buttonForm:hover{
+    background-color: rgb(148, 97, 97);
+}
 .acordeonBootstrap{
     @extend%flexcolumn;
     justify-content: center;
