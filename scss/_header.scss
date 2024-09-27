@@ -60,6 +60,12 @@ margin: 10px 20px ;
     bottom: 100px;
     right: 100px;
 }
+.iconWsp:hover{
+    border-radius: 50%;
+    background-color: brown;
+    transform: translateY(-10%);
+    transition: all 400ms ease;
+}
 /*fin diseño header*/
 
 

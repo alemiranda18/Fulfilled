@@ -74,6 +74,13 @@
   right: 100px;
 }
 
+.iconWsp:hover {
+  border-radius: 50%;
+  background-color: brown;
+  transform: translateY(-10%);
+  transition: all 400ms ease;
+}
+
 /*fin diseño header*/
 /*  inicio diseño responsive header*/
 @media (max-width: 770px) {
@@ -300,7 +307,7 @@
   margin: 0 0;
   text-align: center;
   align-self: center;
-  padding: 40px;
+  padding: 30px;
   font-weight: bolder;
 }
 
